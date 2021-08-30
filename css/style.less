@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Cindie 2';
+    src: local('Cindie 2 T'), local('Cindie-2-T'),
+        url('../fonts/Cindie2-T.woff2') format('woff2'),
+        url('../fonts/Cindie2-T.woff') format('woff'),
+        url('../fonts/Cindie2-T.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Electrolize';
+    src: local('Electrolize'), local('Electrolize'),
+        url('../fonts/electrolize.regular.ttf') format('truetype');
+    }
+
+@main-color: #c51212;
+@sec-color: #929292;
+@bg-color: #171719;
+@text-color: #fff;
+@main-pad: 20px;
+@overlay: 'rgb(23, 23, 26, 0.5)';
+@font-primary: 'Cindie 2';
+@font-secondary: 'Electrolize';
+@bg-image: url('../img/cividale-background-left.png');
+
+body {
+  background: @bg-color;
+  height: 100vh;
+  color: @text-color;
+  font-family: @font-secondary;
+}
+
+nav {
+  font-family: @font-secondary;
+  border: none;
+  box-shadow: none;
+  border-top: 1px solid @text-color;
+  border-bottom: 1px solid @text-color;
+  margin-top: 5px;
+}
+
+#mainMenu {
+  font-size: 0.8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+    & a:hover {
+      color: @main-color;
+    }
+    & i {
+      margin-left: 0px;
+    }
+}
+
+#mainGal {
+  height: 100vh;
+}
+
+.sidenav-overlay{
+    background-color: @overlay;
+    z-index: 900;
+}
+
+#nav-mobile {
+  width: auto;
+  background: @bg-color;
+  .collapsible-body {
+    background: @sec-color;
+  }
+}
+
+.dropdown-content {
+  top: -64px;
+  background: @sec-color;
+}
+
+.divide {
+  & div:last-child {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#divide {
+  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+#navig, #social {
+  a{
+    color: @text-color;
+    &:hover {
+      background-color: none;
+      color: @main-color;
+    }
+  }
+  .btn-flat {
+    font-size: 1.5vh;
+  }
+}
+
+#section1 {
+  div {
+    color: @bg-color;
+    height: 100%;
+    text-shadow: -1px -1px 0 @main-color, 1px -1px 0 @main-color, -1px 1px 0 @main-color, 1px 1px 0 @main-color;
+    font-family: @font-primary;
+  }
+
+  h5 {
+    padding-top: 20px;
+  }
+}
+
+#section2 {
+  background-image: @bg-image;
+  background-size: cover;
+  h4 {
+    font-size: 5vh;
+  }
+  p {
+    font-size: 2.3vh;
+  }
+}

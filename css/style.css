@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Cindie 2';
+  src: local('Cindie 2 T'), local('Cindie-2-T'), url('../fonts/Cindie2-T.woff2') format('woff2'), url('../fonts/Cindie2-T.woff') format('woff'), url('../fonts/Cindie2-T.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Electrolize';
+  src: local('Electrolize'), local('Electrolize'), url('../fonts/electrolize.regular.ttf') format('truetype');
+}
+body {
+  background: #171719;
+  height: 100vh;
+  color: #ffffff;
+  font-family: 'Electrolize';
+}
+nav {
+  font-family: 'Electrolize';
+  border: none;
+  box-shadow: none;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 5px;
+}
+#mainMenu {
+  font-size: 0.8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+}
+#mainMenu a:hover {
+  color: #c51212;
+}
+#mainMenu i {
+  margin-left: 0px;
+}
+#mainGal {
+  height: 100vh;
+}
+.sidenav-overlay {
+  background-color: 'rgb(23, 23, 26, 0.5)';
+  z-index: 900;
+}
+#nav-mobile {
+  width: auto;
+  background: #171719;
+}
+#nav-mobile .collapsible-body {
+  background: #929292;
+}
+.dropdown-content {
+  top: -64px;
+  background: #929292;
+}
+.divide div:last-child {
+  padding: 0;
+  margin: 0;
+}
+#divide {
+  margin: 0;
+}
+#divide:last-child {
+  margin: 0;
+}
+#navig a,
+#social a {
+  color: #ffffff;
+}
+#navig a:hover,
+#social a:hover {
+  background-color: none;
+  color: #c51212;
+}
+#navig .btn-flat,
+#social .btn-flat {
+  font-size: 1.5vh;
+}
+#section1 div {
+  color: #171719;
+  height: 100%;
+  text-shadow: -1px -1px 0 #c51212, 1px -1px 0 #c51212, -1px 1px 0 #c51212, 1px 1px 0 #c51212;
+  font-family: 'Cindie 2';
+}
+#section1 h5 {
+  padding-top: 20px;
+}
+#section2 {
+  background-image: url('../img/cividale-background-left.png');
+  background-size: cover;
+}
+#section2 h4 {
+  font-size: 5vh;
+}
+#section2 p {
+  font-size: 2.3vh;
+}
