@@ -8,13 +8,13 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Main</title>
+  <title>Products</title>
 </head>
 <body>
   <div class="divide row" id="divide">
-    <div class="col s12 l7" id="leftside">
+    <div class="col s12" id="leftside">
       <header class="">
-        <div class="navbar">
+        <div class="navbar-fixed">
           <nav class="" role="navigation" id="navig">
             <ul class="dropdown-content" id="dropdown1">
               <li><a href="history.html">History</a></li>
@@ -33,7 +33,10 @@
               <li><a href="">Work with us</a></li>
             </ul>
               <div class="nav-wrapper">
-                <ul class="hide-on-med-and-down" id="mainMenu">
+                <a id="logo-container" href="#"  class="brand-logo left">
+                 ETM
+               </a>
+                <ul class="hide-on-med-and-down right" id="mainMenu">
                   <li class=""><a class="dropdown-trigger" href="index.html" data-target="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
                   <li><a href="products.html">Products</a></li>
                   <li><a class="dropdown-trigger" href="sustain.html" data-target="dropdown2">Sustainability<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -105,45 +108,88 @@
             </nav>
         </div>
       </header>
-        <div class="carousel carousel-slider hide-on-large-only" >
-          <div class="carousel-item" href="#one!"><img src="img/project.jpg" height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/standarts.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/assembly.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/delivery.jpg"  height=100%></div>
-        </div>
-      <main>
-        <div class="row" id="section1">
-          <div class="col s12 l5">
-            <h1 class="center">ETM</h1>
-          </div>
-          <div class="col s12 l4">
-            <h5 class="center">Engineering<br>Technology<br>Metalworking</h5>
+      <main id="products" class="container">
+        <div class="row" >
+          <div class="col s12">
+            <h3>our products</h3>
           </div>
         </div>
-        <div class="divider"></div>
-        <div class="row" id="section2">
-          <div class="col s8 offset-s2">
-            <h4 class="center">We know how to provide high quality solutions</h4>
+        <div class="card horizontal transparent">
+          <div class="card-stacked">
+            <div class="card-content valign-wrapper">
+              <h5>Product 1</h5>
+              <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
           </div>
-          <div class="col s8 offset-s2">
-            <p class="center">ETM offers a specific consultancy
-              service to the Customer in the prototyping phase, in the feasibility
-              analysis and in the evaluation of the material to be used. Our vast
-              and long-standing experience covers the widest range of materials:
-              carbon steels, low alloys, high alloys, gray cast iron, nodular cast
-              iron up to stainless steels (including duplex and super duplex) and
-              nickel-based alloys.
-            </p>
+          <div class="card-image">
+            <img src="img/parts0.jpg" class="responsive-img">
           </div>
-          <div class="col s8 offset-s2">
-            <p class="center">Our production sites meet the criteria of ISO 14001
-              (Environmental Management System) and BS OHSAS 18001 (Health and
-              Safety Management System).
-            </p>
+          <div class="card-action valign-wrapper">
+            <a href="#"><i class="large material-icons">arrow_forward</i></a>
           </div>
         </div>
         <div class="divider"></div>
+        <div class="card horizontal transparent">
+          <div class="card-stacked">
+            <div class="card-content valign-wrapper">
+              <h5>Product 2</h5>
+              <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="img/parts1.jpg" class="responsive-img">
+          </div>
+          <div class="card-action valign-wrapper">
+            <a href="#"><i class="large material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card horizontal transparent">
+          <div class="card-stacked">
+            <div class="card-content valign-wrapper">
+              <h5>Product 3</h5>
+              <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="img/parts2.jpg" class="responsive-img">
+          </div>
+          <div class="card-action valign-wrapper">
+            <a href="#"><i class="large material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card horizontal transparent">
+          <div class="card-stacked">
+            <div class="card-content valign-wrapper">
+              <h5>Product 4</h5>
+              <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="img/parts3.jpg" class="responsive-img">
+          </div>
+          <div class="card-action valign-wrapper">
+            <a href="#"><i class="large material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card horizontal transparent">
+          <div class="card-stacked">
+            <div class="card-content valign-wrapper">
+              <h5>Product 5</h5>
+              <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="img/parts4.jpg" class="responsive-img">
+          </div>
+          <div class="card-action valign-wrapper">
+            <a href="#"><i class="large material-icons">arrow_forward</i></a>
+          </div>
+        </div>
       </main>
+      <div class="divider"></div>
       <footer>
         <div class="row valign-wrapper hide-on-med-and-down" id="social1">
           <a class="col s2 offset-s2 waves-effect waves-teal btn-flat center" href="https://instagram.com">Instagram</a>
@@ -152,14 +198,6 @@
         </div>
       </footer>
     </div>
-      <div class="col l5 hide-on-med-and-down">
-        <div class="carousel carousel-slider" id="mainGal">
-          <div class="carousel-item" href="#one!"><img src="img/project.jpg" height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/standarts.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/assembly.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/delivery.jpg"  height=100%></div>
-        </div>
-      </div>
   </div>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -170,40 +208,10 @@
         var instances = M.Sidenav.init(elems, {edge: "right"});
     });
   </script>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-// initialize carousel
-const carousel = document.querySelectorAll('.carousel');
-M.Carousel.init(carousel, {
-  fullWidth: true,
-  indicators: true, // this option is require for autoplay functionnality
-});
-
-// custom function for autoplaying
-let indicatorItems = document.querySelectorAll('.carousel .indicator-item'),
-    slideTime = 3000,
-    activeClass = "active";
-
-setInterval(() => {
-  indicatorItems.forEach(el => {
-    if (el.classList.contains(activeClass)) {
-      sib = el.nextElementSibling;
-      if (sib == null) {
-        indicatorItems[0].click();
-      } else {
-        sib.click()
-      }
-    }
-  });
-}, slideTime);
-});
-  </script>
-
   <script>
   document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
+    var instances = M.Dropdown.init(elems, {hover: true});
   });
   </script>
 

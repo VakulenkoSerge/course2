@@ -8,13 +8,13 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Main</title>
+  <title>History</title>
 </head>
 <body>
   <div class="divide row" id="divide">
-    <div class="col s12 l7" id="leftside">
+    <div class="col s12" id="leftside">
       <header class="">
-        <div class="navbar">
+        <div class="navbar-fixed">
           <nav class="" role="navigation" id="navig">
             <ul class="dropdown-content" id="dropdown1">
               <li><a href="history.html">History</a></li>
@@ -33,7 +33,10 @@
               <li><a href="">Work with us</a></li>
             </ul>
               <div class="nav-wrapper">
-                <ul class="hide-on-med-and-down" id="mainMenu">
+                <a id="logo-container" href="#"  class="brand-logo left">
+                 ETM
+               </a>
+                <ul class="hide-on-med-and-down right" id="mainMenu">
                   <li class=""><a class="dropdown-trigger" href="index.html" data-target="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
                   <li><a href="products.html">Products</a></li>
                   <li><a class="dropdown-trigger" href="sustain.html" data-target="dropdown2">Sustainability<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -105,45 +108,37 @@
             </nav>
         </div>
       </header>
-        <div class="carousel carousel-slider hide-on-large-only" >
-          <div class="carousel-item" href="#one!"><img src="img/project.jpg" height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/standarts.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/assembly.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/delivery.jpg"  height=100%></div>
-        </div>
       <main>
-        <div class="row" id="section1">
-          <div class="col s12 l5">
-            <h1 class="center">ETM</h1>
+        <div class="video">
+          <video width="100%" height="100%" autoplay='true' loop='true' preload="auto" muted="true" class=" hide-on-med-and-down">
+             <source src="video/home.mp4" type='video/mp4'>
+          </video>
+          <div class="ontop hide-on-med-and-down">
+            <h1>history</h1>
           </div>
-          <div class="col s12 l4">
-            <h5 class="center">Engineering<br>Technology<br>Metalworking</h5>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" id="section2">
-          <div class="col s8 offset-s2">
-            <h4 class="center">We know how to provide high quality solutions</h4>
-          </div>
-          <div class="col s8 offset-s2">
-            <p class="center">ETM offers a specific consultancy
-              service to the Customer in the prototyping phase, in the feasibility
-              analysis and in the evaluation of the material to be used. Our vast
-              and long-standing experience covers the widest range of materials:
-              carbon steels, low alloys, high alloys, gray cast iron, nodular cast
-              iron up to stainless steels (including duplex and super duplex) and
-              nickel-based alloys.
-            </p>
-          </div>
-          <div class="col s8 offset-s2">
-            <p class="center">Our production sites meet the criteria of ISO 14001
-              (Environmental Management System) and BS OHSAS 18001 (Health and
-              Safety Management System).
-            </p>
+          <div class="row">
+            <div class="col s10 offset-s1 l8 offset-l2" id="section2">
+              <h1 class="hide-on-large-only center">HISTORY</h1>
+              <div class="video-container hide-on-large-only center">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/hnpc6no1Vt0" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <p>The oldest archaeological evidence of copper mining and working was the discovery of a copper pendant in northern Iraq from 8,700 BCE.[2] The earliest substantiated and dated evidence of metalworking in the Americas was the processing of copper in Wisconsin, near Lake Michigan. Copper was hammered until it became brittle, then heated so it could be worked further. This technology is dated to about 4000-5000 BCE.[3] The oldest gold artifacts in the world come from the Bulgarian Varna Necropolis and date from 4450 BCE.</p>
+              <p>
+                Not all metal required fire to obtain it or work it. Isaac Asimov speculated that gold was the "first metal".[4] His reasoning being, that, by its chemistry, it is found in nature as nuggets of pure gold. In other words, gold, as rare as it is, is sometimes found in nature as a native metal. Some metals can also be found in meteors. Almost all other metals are found in ores, a mineral-bearing rock, that require heat or some other process to liberate the metal. Another feature of gold is that it is workable as it is found, meaning that no technology beyond a stone hammer and anvil is needed to work the metal. This is a result of gold's properties of malleability and ductility. The earliest tools were stone, bone, wood, and sinew, all of which sufficed to work gold.
+              </p>
+              <p>At some unknown time, the process of liberating metals from rock by heat became known, and rocks rich in copper, tin, and lead came into demand. These ores were mined wherever they were recognized. Remnants of such ancient mines have been found all over Southwestern Asia.[5] Metalworking was being carried out by the South Asian inhabitants of Mehrgarh between 7000 and 3300 BCE.[6] The end of the beginning of metalworking occurs sometime around 6000 BCE when copper smelting became common in Southwestern Asia.</p>
+              <div class="center hide-on-med-and-down">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hnpc6no1Vt0" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="divider"></div>
       </main>
+      <div class="divider"></div>
       <footer>
         <div class="row valign-wrapper hide-on-med-and-down" id="social1">
           <a class="col s2 offset-s2 waves-effect waves-teal btn-flat center" href="https://instagram.com">Instagram</a>
@@ -152,14 +147,6 @@
         </div>
       </footer>
     </div>
-      <div class="col l5 hide-on-med-and-down">
-        <div class="carousel carousel-slider" id="mainGal">
-          <div class="carousel-item" href="#one!"><img src="img/project.jpg" height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/standarts.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/assembly.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/delivery.jpg"  height=100%></div>
-        </div>
-      </div>
   </div>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -170,40 +157,10 @@
         var instances = M.Sidenav.init(elems, {edge: "right"});
     });
   </script>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-// initialize carousel
-const carousel = document.querySelectorAll('.carousel');
-M.Carousel.init(carousel, {
-  fullWidth: true,
-  indicators: true, // this option is require for autoplay functionnality
-});
-
-// custom function for autoplaying
-let indicatorItems = document.querySelectorAll('.carousel .indicator-item'),
-    slideTime = 3000,
-    activeClass = "active";
-
-setInterval(() => {
-  indicatorItems.forEach(el => {
-    if (el.classList.contains(activeClass)) {
-      sib = el.nextElementSibling;
-      if (sib == null) {
-        indicatorItems[0].click();
-      } else {
-        sib.click()
-      }
-    }
-  });
-}, slideTime);
-});
-  </script>
-
   <script>
   document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
+    var instances = M.Dropdown.init(elems, {hover: true});
   });
   </script>
 

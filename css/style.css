@@ -8,6 +8,15 @@
   font-family: 'Electrolize';
   src: local('Electrolize'), local('Electrolize'), url('../fonts/electrolize.regular.ttf') format('truetype');
 }
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c51212;
+  border-radius: 9em;
+}
 body {
   background: #171719;
   height: 100vh;
@@ -15,6 +24,7 @@ body {
   font-family: 'Electrolize';
 }
 nav {
+  background: #171719;
   font-family: 'Electrolize';
   border: none;
   box-shadow: none;
@@ -24,7 +34,6 @@ nav {
 }
 #mainMenu {
   font-size: 0.8em;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 0px;
@@ -35,8 +44,16 @@ nav {
 #mainMenu i {
   margin-left: 0px;
 }
+#logo-container {
+  font-family: 'Cindie 2';
+  margin-left: 20px;
+}
 #mainGal {
   height: 100vh;
+}
+#leftside {
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .sidenav-overlay {
   background-color: 'rgb(23, 23, 26, 0.5)';
@@ -64,17 +81,24 @@ nav {
   margin: 0;
 }
 #navig a,
-#social a {
+#social1 a {
   color: #ffffff;
 }
 #navig a:hover,
-#social a:hover {
+#social1 a:hover {
   background-color: none;
   color: #c51212;
 }
-#navig .btn-flat,
-#social .btn-flat {
-  font-size: 1.5vh;
+#social2 {
+  display: inline-block;
+  margin: auto 0 auto 30%;
+}
+#social2 .btn-flat {
+  font-size: 1.5vw;
+}
+#social2:hover {
+  background-color: none;
+  color: #c51212;
 }
 #section1 div {
   color: #171719;
@@ -88,10 +112,82 @@ nav {
 #section2 {
   background-image: url('../img/cividale-background-left.png');
   background-size: cover;
+  text-align: justify;
 }
 #section2 h4 {
-  font-size: 5vh;
+  font-size: 6vh;
 }
 #section2 p {
-  font-size: 2.3vh;
+  font-size: 3vh;
+}
+.video {
+  position: relative;
+}
+.ontop {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: label 4s linear;
+}
+.ontop h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #fff;
+}
+@keyframes label {
+  from {
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(100);
+  }
+}
+#products h1,
+#products h2,
+#products h3,
+#products h4,
+#products h5 {
+  font-family: 'Cindie 2';
+}
+#products h3 {
+  color: #c51212;
+  text-transform: uppercase;
+  margin: 1.3em 0;
+}
+#products h5 {
+  margin-bottom: 20px;
+}
+#products .valign-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#products .card {
+  box-shadow: none;
+  border: none;
+  margin: 40px auto;
+  transition: 0.2s;
+}
+#products .card:hover h5 {
+  color: #c51212;
+}
+#products .card:hover i {
+  color: #c51212;
+}
+#products .card-action {
+  box-shadow: none;
+  border: none;
+  padding-left: 30px;
+}
+#products .card-action i {
+  color: #fff;
+  transition: 0.2s;
+}
+#products .card-action i:hover {
+  transform: scale(1.1);
+}
+#products img {
+  box-shadow: none;
+  border: none;
+  margin-left: 30px;
 }
