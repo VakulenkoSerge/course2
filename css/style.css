@@ -32,6 +32,9 @@ nav {
 nav .active {
   color: #ff5000;
 }
+p {
+  text-align: justify;
+}
 #logo-container {
   font-family: 'Cindie 2';
   margin-left: 20px;
@@ -121,6 +124,29 @@ nav .active {
     filter: opacity(100);
   }
 }
+.btn-main {
+  margin-top: 5px;
+  background: #ff5000;
+  border: 1px solid #ffffff;
+}
+.btn-main:hover {
+  background: #929292;
+  color: #ff5000;
+  border: 1px solid #ff5000;
+  font-weight: 600;
+}
+.btn-sec {
+  margin-top: 5px;
+  background: #929292;
+  border: 1px solid #ff5000;
+  color: #ff5000;
+}
+.btn-sec:hover {
+  background: #ff5000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+}
 section .container {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -133,54 +159,86 @@ section .card {
 section .card .card-content {
   padding: 0;
 }
-#resourse {
+#resourse,
+#strategy {
   background: url('../img/cividale-background-left.png');
   background-size: cover;
 }
-#resourse div:last-child {
+#resourse div:last-child,
+#strategy div:last-child {
   margin-bottom: 0px;
 }
-#services {
+#services,
+#strategy {
   height: auto;
 }
-#services h4 {
+#services h4,
+#strategy h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
 }
-#services .parallax {
+#services .parallax,
+#strategy .parallax {
   filter: brightness(0.6);
 }
-#services .valign-wrapper {
+#services .valign-wrapper,
+#strategy .valign-wrapper {
   justify-content: flex-end;
 }
-#services .btn-large {
-  margin-top: 5px;
-  background: #ff5000;
-  border: 1px solid #ffffff;
-}
-#services .btn-large:hover {
-  background: #929292;
-  color: #ff5000;
-  border: 1px solid #ff5000;
-  font-weight: 600;
-}
-#services ul {
+#services ul,
+#strategy ul {
   margin: 50px auto;
 }
-#services ul .active .collapsible-header {
+#services ul .active .collapsible-header,
+#strategy ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
-#services ul .collapsible-header {
+#services ul .collapsible-header,
+#strategy ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
 }
-#services ul .collapsible-header:hover {
+#services ul .collapsible-header:hover,
+#strategy ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
-#services ul .collapsible-body {
+#services ul .collapsible-body,
+#strategy ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
+}
+#strategy .container h5 {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+#strategy .container h6 {
+  font-weight: bolder;
+}
+#strategy .container > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+}
+#strategy .container > div > div {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+#strategy .container > div > div img {
+  height: 85px;
+  margin-right: 30px;
+  background: #ff5000;
+  padding: 15px;
+}
+#strategy .container > div:last-child {
+  display: flex;
+}
+@media only screen and (max-width: 992px) {
+  #strategy .container > div {
+    display: block;
+  }
 }
