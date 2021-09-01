@@ -8,159 +8,262 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Main</title>
+  <title>ETM</title>
 </head>
 <body>
-  <div class="divide row" id="divide">
-    <div class="col s12 l7" id="leftside">
-      <header class="">
-        <div class="navbar">
-          <nav class="" role="navigation" id="navig">
-            <ul class="dropdown-content" id="dropdown1">
-              <li><a href="history.html">History</a></li>
-              <li><a href="">Values</a></li>
-              <li><a href="">Numbers</a></li>
-              <li><a href="">Group</a></li>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="" role="navigation" id="nav">
+        <ul class="dropdown-content" id="dropdown1">
+          <li><a href="history.html">History</a></li>
+          <li><a href="">Values</a></li>
+          <li><a href="">Numbers</a></li>
+          <li><a href="">Group</a></li>
+        </ul>
+        <ul class="dropdown-content" id="dropdown2">
+          <li><a href="">Environment</a></li>
+          <li><a href="">Safety</a></li>
+          <li><a href="">Ethical code</a></li>
+        </ul>
+        <ul class="dropdown-content" id="dropdown3">
+          <li><a href="contact.html#contact">Contact us</a></li>
+          <li><a href="contact.html#where">Where we are</a></li>
+          <li><a href="">Work with us</a></li>
+        </ul>
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html"  class="brand-logo left">ETM</a>
+          <ul class="hide-on-med-and-down right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Services</a></li>
+            <li><a class="dropdown-trigger" href="sustain.html" data-target="dropdown2">Sustainability<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a class="dropdown-trigger" href="contact.html" data-target="dropdown3">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav collapsible expandable">
+              <li>
+                <div class="">
+                  <a href="about.html" class="">About</a>
+                </div>
+              </li>
+              <li>
+                  <div class="">
+                    <a href="products.html" class="">Services</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="left">
+                    <a href="sustain.html" class="">Sustainability</a>
+                  </div>
+                  <div class="collapsible-header"><a href="#">&#9660;</a></div>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="">Environment</a></li>
+                      <li><a href="">Safety</a></li>
+                      <li><a href="">Ethical code</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="">
+                    <a href="references.html">References</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="left">
+                    <a href="contact.html" class="">Contact</a>
+                  </div>
+                  <div class="collapsible-header"><a href="#">&#9660;</a></div>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="contact.html#contact">Contact us</a></li>
+                      <li><a href="contact.html#where">Where we are</a></li>
+                      <li><a href="">Work with us</a></li>
+                    </ul>
+                  </div>
+                </li>
             </ul>
-            <ul class="dropdown-content" id="dropdown2">
-              <li><a href="">Environment</a></li>
-              <li><a href="">Safety</a></li>
-              <li><a href="">Ethical code</a></li>
-            </ul>
-            <ul class="dropdown-content" id="dropdown3">
-              <li><a href="contact.html#contact">Contact us</a></li>
-              <li><a href="contact.html#where">Where we are</a></li>
-              <li><a href="">Work with us</a></li>
-            </ul>
-              <div class="nav-wrapper">
-                <ul class="hide-on-med-and-down" id="mainMenu">
-                  <li class=""><a class="dropdown-trigger" href="index.html" data-target="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <li><a href="products.html">Products</a></li>
-                  <li><a class="dropdown-trigger" href="sustain.html" data-target="dropdown2">Sustainability<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <li><a href="references.html">References</a></li>
-                  <li><a class="dropdown-trigger" href="contact.html" data-target="dropdown3">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
-                </ul>
-                <ul id="nav-mobile" class="sidenav collapsible expandable">
-                  <li>
-                    <div class="left">
-                      <a href="index.html" class="">About</a>
-                    </div>
-                    <div class="collapsible-header"><a href="#">&#9660;</a></div>
-                    <div class="collapsible-body">
-                      <ul>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="">Values</a></li>
-                        <li><a href="">Numbers</a></li>
-                        <li><a href="">Group</a></li>
-                      </ul>
-                    </div>
-                    </li>
-                    <li>
-                      <div class="">
-                        <a href="products.html" class="">Products</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="left">
-                        <a href="sustain.html" class="">Sustainability</a>
-                      </div>
-                      <div class="collapsible-header"><a href="#">&#9660;</a></div>
-                      <div class="collapsible-body">
-                        <ul>
-                          <li><a href="">Environment</a></li>
-                          <li><a href="">Safety</a></li>
-                          <li><a href="">Ethical code</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="">
-                        <a href="references.html">References</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="left">
-                        <a href="contact.html" class="">Contact</a>
-                      </div>
-                      <div class="collapsible-header"><a href="#">&#9660;</a></div>
-                      <div class="collapsible-body">
-                        <ul>
-                          <li><a href="contact.html#contact">Contact us</a></li>
-                          <li><a href="contact.html#where">Where we are</a></li>
-                          <li><a href="">Work with us</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                </ul>
-                <a id="logo-container" href="#"  class="brand-logo left hide-on-large-only">
-                 ETM
-               </a>
-               <div class="hide-on-large-only center" id="social2">
-                 <a class=" waves-effect waves-teal btn-flat center" href="https://instagram.com">Instagram</a>
-                 <a class=" waves-effect waves-teal btn-flat center" href="https://fb.com">Facebook</a>
-                 <a class="waves-effect waves-teal btn-flat center" href="https://twitter.com">Twitter</a>
-               </div>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-              </div>
-            </nav>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
         </div>
-      </header>
-        <div class="carousel carousel-slider hide-on-large-only" >
-          <div class="carousel-item" href="#one!"><img src="img/project.jpg" height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/standarts.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/assembly.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/delivery.jpg"  height=100%></div>
-        </div>
-      <main>
-        <div class="row" id="section1">
-          <div class="col s12 l5">
-            <h1 class="center">ETM</h1>
-          </div>
-          <div class="col s12 l4">
-            <h5 class="center">Engineering<br>Technology<br>Metalworking</h5>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" id="section2">
-          <div class="col s8 offset-s2">
-            <h4 class="center">We know how to provide high quality solutions</h4>
-          </div>
-          <div class="col s8 offset-s2">
-            <p class="center">ETM offers a specific consultancy
-              service to the Customer in the prototyping phase, in the feasibility
-              analysis and in the evaluation of the material to be used. Our vast
-              and long-standing experience covers the widest range of materials:
-              carbon steels, low alloys, high alloys, gray cast iron, nodular cast
-              iron up to stainless steels (including duplex and super duplex) and
-              nickel-based alloys.
-            </p>
-          </div>
-          <div class="col s8 offset-s2">
-            <p class="center">Our production sites meet the criteria of ISO 14001
-              (Environmental Management System) and BS OHSAS 18001 (Health and
-              Safety Management System).
-            </p>
-          </div>
-        </div>
-        <div class="divider"></div>
-      </main>
-      <footer>
-        <div class="row valign-wrapper hide-on-med-and-down" id="social1">
-          <a class="col s2 offset-s2 waves-effect waves-teal btn-flat center" href="https://instagram.com">Instagram</a>
-          <a class="col s2 offset-s1 waves-effect waves-teal btn-flat center" href="https://fb.com">Facebook</a>
-          <a class="col s2 offset-s1 waves-effect waves-teal btn-flat center" href="https://twitter.com">Twitter</a>
-        </div>
-      </footer>
+      </nav>
     </div>
-      <div class="col l5 hide-on-med-and-down">
-        <div class="carousel carousel-slider" id="mainGal">
-          <div class="carousel-item" href="#one!"><img src="img/project.jpg" height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/standarts.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/assembly.jpg"  height=100%></div>
-          <div class="carousel-item" href="#two!"><img src="img/delivery.jpg"  height=100%></div>
+  </header>
+  <main>
+    <div class="video">
+      <video width="100%" height="100%" autoplay='true' loop='true' preload="auto" muted="true">
+         <source src="video/home.mp4" type='video/mp4'>
+      </video>
+      <div class="container">
+        <div class="ontop">
+          <div class="hide-on-med-and-down">
+            <h1>engineering</h1>
+            <h1>technology</h1>
+            <h1>metalworking</h1>
+          </div>
+          <div class="hide-on-large-only">
+            <h5>engineering</h5>
+            <h5>technology</h5>
+            <h5>metalworking</h5>
+          </div>
+          <a class="waves-effect waves-light btn-large" href="about.html">discover</a>
         </div>
       </div>
-  </div>
+    </div>
+    <section id="resourse">
+      <div class="container">
+        <div class="row">
+          <div class="col s6 offset-s3 m2">
+            <div class="card transparent">
+              <div class="card-image">
+                <img src="img/factory.png">
+              </div>
+              <div class="card-content center">
+                <h4>18</h4>
+                <h6>Factories</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 offset-s3 m2 offset-m3">
+            <div class="card transparent">
+              <div class="card-image">
+                <img src="img/worker.png">
+              </div>
+              <div class="card-content center">
+                <h4>2000</h4>
+                <h6>Employees</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 offset-s3 m2 offset-m3">
+            <div class="card transparent">
+              <div class="card-image">
+                <img src="img/nut.png">
+              </div>
+              <div class="card-content center">
+                <h4>19000</h4>
+                <h6>Tons forged per year</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section  class="parallax-container"  id="services">
+      <div class="container">
+        <h4>our services</h4>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header black center">High-precision industrial parts of any complexity
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="collapsible-body">
+              <table>
+                <tr>
+                  <th>Type of service</th>
+                  <td>production of castings of any complexity</td>
+                </tr>
+                <tr>
+                  <th>Casting material</th>
+                  <td>steel, cast iron, stainless steel</td>
+                </tr>
+                <tr>
+                  <th>Product weight</th>
+                  <td>from 1 kg to 5000 kg</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black center">High-precision industrial parts of any complexity
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="collapsible-body">
+              <table>
+                <tr>
+                  <th>Type of service</th>
+                  <td>production of castings of any complexity</td>
+                </tr>
+                <tr>
+                  <th>Casting material</th>
+                  <td>steel, cast iron, stainless steel</td>
+                </tr>
+                <tr>
+                  <th>Product weight</th>
+                  <td>from 1 kg to 5000 kg</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black center">High-precision industrial parts of any complexity
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="collapsible-body">
+              <table>
+                <tr>
+                  <th>Type of service</th>
+                  <td>production of castings of any complexity</td>
+                </tr>
+                <tr>
+                  <th>Casting material</th>
+                  <td>steel, cast iron, stainless steel</td>
+                </tr>
+                <tr>
+                  <th>Product weight</th>
+                  <td>from 1 kg to 5000 kg</td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="collapsible-header black center">High-precision industrial parts of any complexity
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="collapsible-body">
+              <table>
+                <tr>
+                  <th>Type of service</th>
+                  <td>production of castings of any complexity</td>
+                </tr>
+                <tr>
+                  <th>Casting material</th>
+                  <td>steel, cast iron, stainless steel</td>
+                </tr>
+                <tr>
+                  <th>Product weight</th>
+                  <td>from 1 kg to 5000 kg</td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="collapsible-header black center">High-precision industrial parts of any complexity
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="collapsible-body">
+              <table>
+                <tr>
+                  <th>Type of service</th>
+                  <td>production of castings of any complexity</td>
+                </tr>
+                <tr>
+                  <th>Casting material</th>
+                  <td>steel, cast iron, stainless steel</td>
+                </tr>
+                <tr>
+                  <th>Product weight</th>
+                  <td>from 1 kg to 5000 kg</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <div class="valign-wrapper">
+          <a class="waves-effect waves-light btn-large" href="about.html">more..</a>
+        </div>
+
+      </div>
+      <div class="parallax"><img src="img/placeholder-3.jpg"></div>
+    </section>
+  </main>
+
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -170,40 +273,10 @@
         var instances = M.Sidenav.init(elems, {edge: "right"});
     });
   </script>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-// initialize carousel
-const carousel = document.querySelectorAll('.carousel');
-M.Carousel.init(carousel, {
-  fullWidth: true,
-  indicators: true, // this option is require for autoplay functionnality
-});
-
-// custom function for autoplaying
-let indicatorItems = document.querySelectorAll('.carousel .indicator-item'),
-    slideTime = 3000,
-    activeClass = "active";
-
-setInterval(() => {
-  indicatorItems.forEach(el => {
-    if (el.classList.contains(activeClass)) {
-      sib = el.nextElementSibling;
-      if (sib == null) {
-        indicatorItems[0].click();
-      } else {
-        sib.click()
-      }
-    }
-  });
-}, slideTime);
-});
-  </script>
-
   <script>
   document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
+    var instances = M.Dropdown.init(elems, {hover: true});
   });
   </script>
 
@@ -222,10 +295,17 @@ setInterval(() => {
   </script>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-   var elems = document.querySelectorAll('.fixed-action-btn');
-   var instances = M.FloatingActionButton.init(elems, {direction: 'right', hoverEnabled: false});
- });
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {direction: 'right', hoverEnabled: false});
+   });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
   </script>
 </body>
 </html>
