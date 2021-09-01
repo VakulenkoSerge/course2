@@ -34,6 +34,8 @@
 @font-primary: 'Cindie 2';
 @font-secondary: 'Electrolize';
 @bg-image: url('../img/cividale-background-left.png');
+@bg-color-1: rgba(23, 23, 26, 0.8);
+@bg-color-2: rgba(23, 23, 26, 0.6);
 
 body {
   background: @bg-color;
@@ -149,8 +151,8 @@ nav {
 
 section {
   & .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   & .card {
@@ -180,6 +182,7 @@ section {
   & h4 {
     font-family: @font-primary;
     text-transform: uppercase;
+    margin: 0;
   }
   height: auto;
   & .parallax {
@@ -199,7 +202,25 @@ section {
       font-weight: 600;
     }
   }
-
+  & ul {
+    margin: 50px auto;
+    & .active .collapsible-header{
+      color: @text-color;
+      background: @main-color;
+    }
+    & .collapsible-header {
+      justify-content: space-between;
+      transition: 0.2s;
+      background: @bg-color-1;
+      &:hover {
+        color: @text-color;
+        background: @main-color;
+      }
+     }
+     & .collapsible-body {
+      background: @bg-color-1;
+     }
+  }
 }
 
 

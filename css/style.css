@@ -122,8 +122,8 @@ nav .active {
   }
 }
 section .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 section .card {
   box-shadow: none;
@@ -146,6 +146,7 @@ section .card .card-content {
 #services h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
+  margin: 0;
 }
 #services .parallax {
   filter: brightness(0.6);
@@ -163,4 +164,23 @@ section .card .card-content {
   color: #ff5000;
   border: 1px solid #ff5000;
   font-weight: 600;
+}
+#services ul {
+  margin: 50px auto;
+}
+#services ul .active .collapsible-header {
+  color: #ffffff;
+  background: #ff5000;
+}
+#services ul .collapsible-header {
+  justify-content: space-between;
+  transition: 0.2s;
+  background: rgba(23, 23, 26, 0.8);
+}
+#services ul .collapsible-header:hover {
+  color: #ffffff;
+  background: #ff5000;
+}
+#services ul .collapsible-body {
+  background: rgba(23, 23, 26, 0.8);
 }
