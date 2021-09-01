@@ -169,45 +169,54 @@ section .card .card-content {
   margin-bottom: 0px;
 }
 #services,
-#strategy {
+#strategy,
+#gall {
   height: auto;
 }
 #services h4,
-#strategy h4 {
+#strategy h4,
+#gall h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
 }
 #services .parallax,
-#strategy .parallax {
-  filter: brightness(0.6);
+#strategy .parallax,
+#gall .parallax {
+  filter: brightness(0.5);
 }
 #services .valign-wrapper,
-#strategy .valign-wrapper {
+#strategy .valign-wrapper,
+#gall .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
-#strategy ul {
+#strategy ul,
+#gall ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
-#strategy ul .active .collapsible-header {
+#strategy ul .active .collapsible-header,
+#gall ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
 #services ul .collapsible-header,
-#strategy ul .collapsible-header {
+#strategy ul .collapsible-header,
+#gall ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
 }
 #services ul .collapsible-header:hover,
-#strategy ul .collapsible-header:hover {
+#strategy ul .collapsible-header:hover,
+#gall ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
 #services ul .collapsible-body,
-#strategy ul .collapsible-body {
+#strategy ul .collapsible-body,
+#gall ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
 }
 #strategy .container h5 {
@@ -241,4 +250,19 @@ section .card .card-content {
   #strategy .container > div {
     display: block;
   }
+}
+#gall .row {
+  margin-bottom: 50px;
+}
+#gall h4 {
+  margin-bottom: 50px;
+}
+#gall img {
+  padding: 0;
+  border: 1px solid #ffffff;
+  transition: .3s;
+}
+#gall .materialboxed:hover:not(.active):hover {
+  opacity: 1;
+  filter: contrast(1.5);
 }

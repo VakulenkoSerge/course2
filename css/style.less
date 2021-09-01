@@ -197,9 +197,6 @@ section {
 }
 
 #resourse, #strategy {
-  // & .col {
-  //   margin-bottom: 50px;
-  // }
   background: @bg-image;
   background-size: cover;
   & div:last-child {
@@ -207,7 +204,7 @@ section {
   }
 }
 
-#services, #strategy {
+#services, #strategy, #gall {
   & h4 {
     font-family: @font-primary;
     text-transform: uppercase;
@@ -215,22 +212,12 @@ section {
   }
   height: auto;
   & .parallax {
-    filter: brightness(0.6);
+    filter: brightness(0.5);
   }
   & .valign-wrapper {
     justify-content: flex-end;
   }
-  // & .btn-large {
-  //   margin-top: 5px;
-  //   background: @main-color;
-  //   border: 1px solid @text-color;
-  //   &:hover {
-  //     background: @sec-color;
-  //     color: @main-color;
-  //     border: 1px solid @main-color;
-  //     font-weight: 600;
-  //   }
-  // }
+
   & ul {
     margin: 50px auto;
     & .active .collapsible-header{
@@ -290,6 +277,26 @@ section {
       &>div {
         display: block;
       }
+    }
+  }
+}
+
+#gall {
+  & .row {
+    margin-bottom: 50px;
+  }
+  & h4 {
+    margin-bottom: 50px;
+  }
+  & img {
+    padding: 0;
+    border: 1px solid @text-color;
+    transition: .3s;
+  }
+  & .materialboxed:hover:not(.active) {
+    &:hover {
+      opacity: 1;
+      filter: contrast(1.5);
     }
   }
 }
