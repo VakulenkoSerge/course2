@@ -48,7 +48,7 @@ nav {
   border: none;
   box-shadow: none;
   border-bottom: 1px solid @sec-color;
-  margin-top: 5px;
+  // margin-top: 5px;
   & .active {
     color: @main-color;
   }
@@ -196,7 +196,7 @@ section {
   }
 }
 
-#resourse, #strategy {
+#resourse, #strategy, #connect {
   background: @bg-image;
   background-size: cover;
   & div:last-child {
@@ -204,7 +204,7 @@ section {
   }
 }
 
-#services, #strategy, #gall {
+#services, #strategy, #gall, #connect {
   & h4 {
     font-family: @font-primary;
     text-transform: uppercase;
@@ -272,7 +272,7 @@ section {
 }
 
 @media only screen and (max-width:992px) {
-  #strategy {
+  #strategy, #connect {
     & .container {
       &>div {
         display: block;
@@ -298,5 +298,65 @@ section {
       opacity: 1;
       filter: contrast(1.5);
     }
+  }
+}
+
+#connect {
+  & h4 {
+    margin-bottom: 50px;
+  }
+  & .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 50px;
+    border-top: 1px solid @text-color;
+    border-bottom: 1px solid @text-color;
+    &>div {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      animation: conn 2s linear infinite alternate;
+    }
+    & p {
+      padding: 0 10px;
+      text-align: left;
+    }
+  }
+}
+
+#modal1 {
+  & * {font-family: @font-secondary;
+  }
+  padding: 20px;
+  h4 {
+    margin-bottom: 20px;
+  }
+  color: @bg-color;
+  & .row {
+    display: block;
+    border: none;
+    margin-bottom: 5px;
+    & .input-field {
+      display: block;
+    }
+    & div, & form{
+      margin: 0;
+      padding: 0;
+      &>div {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+@keyframes conn {
+  from {
+    color: @text-color;
+  }
+  to {
+    color: @main-color;
   }
 }

@@ -27,7 +27,6 @@ nav {
   border: none;
   box-shadow: none;
   border-bottom: 1px solid #929292;
-  margin-top: 5px;
 }
 nav .active {
   color: #ff5000;
@@ -160,63 +159,74 @@ section .card .card-content {
   padding: 0;
 }
 #resourse,
-#strategy {
+#strategy,
+#connect {
   background: url('../img/cividale-background-left.png');
   background-size: cover;
 }
 #resourse div:last-child,
-#strategy div:last-child {
+#strategy div:last-child,
+#connect div:last-child {
   margin-bottom: 0px;
 }
 #services,
 #strategy,
-#gall {
+#gall,
+#connect {
   height: auto;
 }
 #services h4,
 #strategy h4,
-#gall h4 {
+#gall h4,
+#connect h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
 }
 #services .parallax,
 #strategy .parallax,
-#gall .parallax {
+#gall .parallax,
+#connect .parallax {
   filter: brightness(0.5);
 }
 #services .valign-wrapper,
 #strategy .valign-wrapper,
-#gall .valign-wrapper {
+#gall .valign-wrapper,
+#connect .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
 #strategy ul,
-#gall ul {
+#gall ul,
+#connect ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
 #strategy ul .active .collapsible-header,
-#gall ul .active .collapsible-header {
+#gall ul .active .collapsible-header,
+#connect ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
 #services ul .collapsible-header,
 #strategy ul .collapsible-header,
-#gall ul .collapsible-header {
+#gall ul .collapsible-header,
+#connect ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
 }
 #services ul .collapsible-header:hover,
 #strategy ul .collapsible-header:hover,
-#gall ul .collapsible-header:hover {
+#gall ul .collapsible-header:hover,
+#connect ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
 #services ul .collapsible-body,
 #strategy ul .collapsible-body,
-#gall ul .collapsible-body {
+#gall ul .collapsible-body,
+#connect ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
 }
 #strategy .container h5 {
@@ -247,7 +257,8 @@ section .card .card-content {
   display: flex;
 }
 @media only screen and (max-width: 992px) {
-  #strategy .container > div {
+  #strategy .container > div,
+  #connect .container > div {
     display: block;
   }
 }
@@ -265,4 +276,61 @@ section .card .card-content {
 #gall .materialboxed:hover:not(.active):hover {
   opacity: 1;
   filter: contrast(1.5);
+}
+#connect h4 {
+  margin-bottom: 50px;
+}
+#connect .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 50px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+#connect .row > div {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  animation: conn 2s linear infinite alternate;
+}
+#connect .row p {
+  padding: 0 10px;
+  text-align: left;
+}
+#modal1 {
+  padding: 20px;
+  color: #171719;
+}
+#modal1 * {
+  font-family: 'Electrolize';
+}
+#modal1 h4 {
+  margin-bottom: 20px;
+}
+#modal1 .row {
+  display: block;
+  border: none;
+  margin-bottom: 5px;
+}
+#modal1 .row .input-field {
+  display: block;
+}
+#modal1 .row div,
+#modal1 .row form {
+  margin: 0;
+  padding: 0;
+}
+#modal1 .row div > div,
+#modal1 .row form > div {
+  margin: 0;
+}
+@keyframes conn {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: #ff5000;
+  }
 }

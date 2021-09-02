@@ -254,7 +254,7 @@
         <h5>Setting high standards in the steel industry and representing Ukraine on the world market!</h5>
         <div>
           <div>
-            <img src="img/iso.png" alt="">
+            <img src="img/iso.png" alt="" class="responsive-img">
             <div>
               <h6>Achievement</h6>
               <p>Ukrainian casting of European quality, because striving for the best makes us market leaders!</p>
@@ -301,18 +301,86 @@
           <img class="materialboxed resonsive-img col s12 m6 l3" src="img/g8.jpg">
         </div>
         <div class="valign-wrapper">
-          <a class="waves-effect waves-light btn-large btn-main" href="services.html">view gallery</a>
+          <a class="waves-effect waves-light btn-large btn-main" href="gallery.html">view gallery</a>
         </div>
       </div>
       <div class="parallax"><img src="img/placeholder-1.jpg"></div>
     </section>
+    <section id="connect">
+      <div class="container">
+        <h4>how we working</h4>
+        <div class="row">
+          <div class="">
+            <i class="medium material-icons">headset_mic</i>
+            <p>Ordering online or by phone</p>
+            <i class="medium material-icons">keyboard_arrow_right</i>
+          </div>
+          <div class="">
+            <i class="medium material-icons">speaker_notes</i>
+            <p>Coordination of all details, cost calculation</p>
+            <i class="medium material-icons">keyboard_arrow_right</i>
+          </div>
+          <div class="">
+            <i class="medium material-icons">local_shipping</i>
+            <p>Prompt provision of services</p>
+            <i class="medium material-icons">keyboard_arrow_right</i>
+          </div>
+          <div class="">
+            <i class="medium material-icons">payment</i>
+            <p>Payment in any convenient way</p>
+            <i class="medium material-icons">keyboard_arrow_right</i>
+          </div>
+        </div>
+        <div class="valign-wrapper">
+          <a class="waves-effect waves-light btn-large btn-sec modal-trigger" href="#modal1">leave a request</a>
+        </div>
+        <div id="modal1" class="modal">
+          <form>
+            <div class="modal-content">
+              <h5 class="center">Make request</h5>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Your name" id="first_name" type="text" class="validate" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Your phone" id="phone" type="tel" class="validate" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Email" id="email" type="email" class="validate" required>
+                </div>
+              </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea placeholder="Comment" id="textarea1" class="materialize-textarea"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                <button class="btn btn-main waves-effect waves-light" type="submit" name="action">Submit</button>
+                </div>
+                <div class="input-field col s6 right">
+                <button class="btn btn-sec waves-effect waves-light modal-close right" type="submit" name="action">Close</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
-
-
-  <script type="text/javascript" src="js/materialize.min.js"></script>
   <footer>
     
   </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
@@ -365,6 +433,13 @@
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.carousel');
       var instances = M.Carousel.init(elems);
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
     });
   </script>
 </body>
