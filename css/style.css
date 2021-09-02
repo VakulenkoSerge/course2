@@ -187,7 +187,8 @@ section .card .card-content {
 #gall,
 #connect,
 #about,
-#reasons {
+#reasons,
+#gallery {
   height: auto;
 }
 #services h4,
@@ -195,7 +196,8 @@ section .card .card-content {
 #gall h4,
 #connect h4,
 #about h4,
-#reasons h4 {
+#reasons h4,
+#gallery h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
@@ -207,7 +209,8 @@ section .card .card-content {
 #gall .parallax,
 #connect .parallax,
 #about .parallax,
-#reasons .parallax {
+#reasons .parallax,
+#gallery .parallax {
   filter: brightness(0.5);
 }
 #services .valign-wrapper,
@@ -215,7 +218,8 @@ section .card .card-content {
 #gall .valign-wrapper,
 #connect .valign-wrapper,
 #about .valign-wrapper,
-#reasons .valign-wrapper {
+#reasons .valign-wrapper,
+#gallery .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
@@ -223,7 +227,8 @@ section .card .card-content {
 #gall ul,
 #connect ul,
 #about ul,
-#reasons ul {
+#reasons ul,
+#gallery ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
@@ -231,7 +236,8 @@ section .card .card-content {
 #gall ul .active .collapsible-header,
 #connect ul .active .collapsible-header,
 #about ul .active .collapsible-header,
-#reasons ul .active .collapsible-header {
+#reasons ul .active .collapsible-header,
+#gallery ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
@@ -240,7 +246,8 @@ section .card .card-content {
 #gall ul .collapsible-header,
 #connect ul .collapsible-header,
 #about ul .collapsible-header,
-#reasons ul .collapsible-header {
+#reasons ul .collapsible-header,
+#gallery ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
@@ -250,7 +257,8 @@ section .card .card-content {
 #gall ul .collapsible-header:hover,
 #connect ul .collapsible-header:hover,
 #about ul .collapsible-header:hover,
-#reasons ul .collapsible-header:hover {
+#reasons ul .collapsible-header:hover,
+#gallery ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
@@ -259,7 +267,8 @@ section .card .card-content {
 #gall ul .collapsible-body,
 #connect ul .collapsible-body,
 #about ul .collapsible-body,
-#reasons ul .collapsible-body {
+#reasons ul .collapsible-body,
+#gallery ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
 }
 #resourse img {
@@ -391,6 +400,43 @@ section .card .card-content {
   background: rgba(23, 23, 26, 0.8);
   filter: drop-shadow(0 0 0.5rem #ff5000);
 }
+#gallery h4 {
+  margin-bottom: 50px;
+}
+#gallery .materialboxed:hover:not(.active):hover {
+  opacity: 1;
+  filter: contrast(1.5);
+}
+#gallery .container > div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1vh;
+  grid-auto-flow: dense;
+}
+#gallery .container > div .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#gallery .container > div .image:first-child {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+#gallery .container > div .image:nth-child(4n+6) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+#gallery .container > div .image:last-child {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+#gallery .container > div .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
 footer {
   background: #49494a;
   border-top: 1px solid #ff5000;
@@ -440,13 +486,28 @@ footer .container {
 @media only screen and (max-width: 992px) {
   #strategy .container > div,
   #connect .container > div,
-  #reasons .container > div {
+  #reasons .container > div,
+  #gallery .container > div {
     display: block;
   }
   #strategy .container > div h6,
   #connect .container > div h6,
-  #reasons .container > div h6 {
+  #reasons .container > div h6,
+  #gallery .container > div h6 {
     max-width: 100%;
+  }
+  #strategy .container > div .image,
+  #connect .container > div .image,
+  #reasons .container > div .image,
+  #gallery .container > div .image {
+    margin-bottom: 10px;
+  }
+  #strategy .container > div .image .materialboxed:hover:not(.active):hover,
+  #connect .container > div .image .materialboxed:hover:not(.active):hover,
+  #reasons .container > div .image .materialboxed:hover:not(.active):hover,
+  #gallery .container > div .image .materialboxed:hover:not(.active):hover {
+    opacity: 1;
+    filter: contrast(1);
   }
   footer .container {
     display: block;
