@@ -27,9 +27,6 @@ nav {
   border: none;
   box-shadow: none;
 }
-nav .active {
-  color: #ff5000;
-}
 p {
   text-align: justify;
 }
@@ -43,7 +40,11 @@ p {
 }
 #nav-mobile {
   width: auto;
-  background: #171719;
+  background: #49494a;
+}
+#nav-mobile .collapsible-header {
+  margin: 0;
+  padding: 0;
 }
 #nav-mobile .collapsible-body {
   background: #49494a;
@@ -51,22 +52,30 @@ p {
 .dropdown-content,
 .dropdown-content li.active {
   top: -64px;
-  background: #171719;
+  background: #49494a;
 }
 .dropdown-content a:hover,
 .dropdown-content li.active a:hover {
-  background: none;
+  background: #49494a;
 }
 .dropdown-content li:hover,
 .dropdown-content li.active li:hover {
   background: #49494a;
+}
+.dropdown-content a:focus,
+.dropdown-content li.active a:focus {
+  outline: none;
 }
 #nav a {
   color: #ffffff;
   transition: 0.2s;
 }
 #nav a:hover {
-  background-color: none;
+  background-color: #49494a;
+  color: #ff5000;
+}
+#nav .active {
+  background-color: #49494a;
   color: #ff5000;
 }
 .video {
@@ -113,6 +122,7 @@ p {
 }
 .ontop a:hover {
   background: #ff5000;
+  filter: drop-shadow(0 0 0.5rem #ff5000);
 }
 @keyframes label {
   from {
@@ -132,6 +142,7 @@ p {
   color: #ff5000;
   border: 1px solid #ff5000;
   font-weight: 600;
+  filter: drop-shadow(0 0 0.5rem #ff5000);
 }
 .btn-sec {
   margin-top: 5px;
@@ -144,6 +155,7 @@ p {
   color: #ffffff;
   border: 1px solid #ffffff;
   font-weight: 600;
+  filter: drop-shadow(0 0 0.5rem #ff5000);
 }
 section .container {
   padding-top: 100px;
@@ -159,58 +171,76 @@ section .card .card-content {
 }
 #resourse,
 #strategy,
-#connect {
+#connect,
+#about {
   background: url('../img/cividale-background-left.png');
   background-size: cover;
 }
 #resourse div:last-child,
 #strategy div:last-child,
-#connect div:last-child {
+#connect div:last-child,
+#about div:last-child {
   margin-bottom: 0px;
 }
 #services,
 #strategy,
 #gall,
-#connect {
+#connect,
+#about,
+#reasons {
   height: auto;
 }
 #services h4,
 #strategy h4,
 #gall h4,
-#connect h4 {
+#connect h4,
+#about h4,
+#reasons h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
+  color: #ff5000;
+  filter: drop-shadow(0 0 0.1rem #000000);
 }
 #services .parallax,
 #strategy .parallax,
 #gall .parallax,
-#connect .parallax {
+#connect .parallax,
+#about .parallax,
+#reasons .parallax {
   filter: brightness(0.5);
 }
 #services .valign-wrapper,
 #strategy .valign-wrapper,
 #gall .valign-wrapper,
-#connect .valign-wrapper {
+#connect .valign-wrapper,
+#about .valign-wrapper,
+#reasons .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
 #strategy ul,
 #gall ul,
-#connect ul {
+#connect ul,
+#about ul,
+#reasons ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
 #strategy ul .active .collapsible-header,
 #gall ul .active .collapsible-header,
-#connect ul .active .collapsible-header {
+#connect ul .active .collapsible-header,
+#about ul .active .collapsible-header,
+#reasons ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
 #services ul .collapsible-header,
 #strategy ul .collapsible-header,
 #gall ul .collapsible-header,
-#connect ul .collapsible-header {
+#connect ul .collapsible-header,
+#about ul .collapsible-header,
+#reasons ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
@@ -218,15 +248,23 @@ section .card .card-content {
 #services ul .collapsible-header:hover,
 #strategy ul .collapsible-header:hover,
 #gall ul .collapsible-header:hover,
-#connect ul .collapsible-header:hover {
+#connect ul .collapsible-header:hover,
+#about ul .collapsible-header:hover,
+#reasons ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
 #services ul .collapsible-body,
 #strategy ul .collapsible-body,
 #gall ul .collapsible-body,
-#connect ul .collapsible-body {
+#connect ul .collapsible-body,
+#about ul .collapsible-body,
+#reasons ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
+}
+#resourse img {
+  margin-right: 20px;
+  filter: drop-shadow(0 0 0.5rem #ff5000);
 }
 #strategy .container h5 {
   margin-bottom: 50px;
@@ -254,12 +292,6 @@ section .card .card-content {
 }
 #strategy .container > div:last-child {
   display: flex;
-}
-@media only screen and (max-width: 992px) {
-  #strategy .container > div,
-  #connect .container > div {
-    display: block;
-  }
 }
 #gall .row {
   margin-bottom: 50px;
@@ -333,6 +365,32 @@ section .card .card-content {
     color: #ff5000;
   }
 }
+#about .card {
+  margin: 50px auto;
+  border-bottom: none;
+}
+#about .card img {
+  margin-right: 20px;
+  border: 2px solid #ff5000;
+  filter: drop-shadow(0 0 0.5rem #ff5000);
+}
+#reasons h5 {
+  margin-bottom: 50px;
+}
+#reasons .container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#reasons .container > div h6 {
+  display: block;
+  max-width: 24%;
+  line-height: 2rem;
+  padding: 20px;
+  border: 2px solid #ff5000;
+  background: rgba(23, 23, 26, 0.8);
+  filter: drop-shadow(0 0 0.5rem #ff5000);
+}
 footer {
   background: #49494a;
   border-top: 1px solid #ff5000;
@@ -350,7 +408,7 @@ footer .container {
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 #social {
   display: flex;
@@ -367,6 +425,9 @@ footer .container {
 #social a:not(:hover) {
   filter: grayscale(1) brightness(3);
 }
+#social a:hover {
+  filter: drop-shadow(0 0 0.5rem #000000);
+}
 #viber {
   background-image: url('../img/viber.png');
 }
@@ -375,4 +436,19 @@ footer .container {
 }
 #whats {
   background-image: url('../img/whatsapp.png');
+}
+@media only screen and (max-width: 992px) {
+  #strategy .container > div,
+  #connect .container > div,
+  #reasons .container > div {
+    display: block;
+  }
+  #strategy .container > div h6,
+  #connect .container > div h6,
+  #reasons .container > div h6 {
+    max-width: 100%;
+  }
+  footer .container {
+    display: block;
+  }
 }

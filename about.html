@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>About</title>
+</head>
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="" role="navigation" id="nav">
+        <ul class="dropdown-content" id="dropdown1">
+          <li><a href="">Environment</a></li>
+          <li><a href="">Safety</a></li>
+          <li><a href="">Ethical code</a></li>
+        </ul>
+        <ul class="dropdown-content" id="dropdown2">
+          <li><a href="contact.html#contact">Contact us</a></li>
+          <li><a href="contact.html#where">Where we are</a></li>
+          <li><a href="">Work with us</a></li>
+        </ul>
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html"  class="brand-logo left">ETM</a>
+          <ul class="hide-on-med-and-down right">
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="products.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a class="dropdown-trigger" href="contact.html" data-target="dropdown2">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav collapsible expandable">
+              <li>
+                <div class="">
+                  <a href="about.html" class="active">About</a>
+                </div>
+              </li>
+              <li>
+                <div class="">
+                  <a href="products.html" class="">Services</a>
+                </div>
+              </li>
+              <li>
+                <div class="">
+                  <a href="gallery.html" class="">Gallery</a>
+                </div>
+              </li>
+              <li>
+                <div class="">
+                  <a href="references.html">References</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><a href="#">Contact<i class="material-icons right">arrow_drop_down</i></a></div>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="contact.html#contact">Contact us</a></li>
+                    <li><a href="contact.html#where">Where we are</a></li>
+                    <li><a href="">Work with us</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="container">
+        <h4 class="center">about us</h4>
+        <h5 class="center">ETM - solid foundry is 5 years of development and introduction of new technologies, thousands of satisfied customers.</h5>
+        <div class="row">
+          <div class="col s12">
+            <div class="card horizontal transparent">
+              <div class="card-image responsive-img hide-on-small-only">
+                <img src="img/ab.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Mission:</h5>
+                  <p>Setting high standards in the steel industry and representing Ukraine on the world market! Called to the great - to unite people, production, countries, continents!</p>
+                  <h5>Our potential stakes:</h5>
+                  <p>Our potential stakes are castings up to 2 thousand kilograms of any steel grade (including stainless steel), cast iron of any complexity in the shortest possible time. ETM is a team of hot-hearted professionals - focused on quality results!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reasons" class="parallax-container">
+      <div class="container">
+        <h5 class="center">7 REASONS FOR COOPERATION</h5>
+        <div>
+          <h6 class=""><strong><b>Large volumes of casting - </b></strong>up to 2 thousand kilograms</h6>
+          <h6><strong><b>2 types of cooperation </b></strong>serial and single</h6>
+          <h6><strong><b>Flexibility and mobility </b></strong>in the design</h6>
+          <h6><strong><b>Professional </b></strong>design-engineering department</h6>
+          <h6><strong><b>Modern equipment - </b></strong>the ability to work with any brand of steel, iron and various alloys.</h6>
+          <h6><strong><b>Certified metallurgical laboratory </b></strong>(which allows you to see the entire composition of the steel, measure the hardness of the metal, carbon level, ISO quality system)</h6>
+          <h6><strong><b>Competitive price  </b></strong>compared to other European countries</h6>
+        </div>
+
+      </div>
+      <div class="parallax"><img src="img/g10.jpg"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div>
+          <h2>ETM</h2>
+          <p><small>&copy; 2021 All rights reserved</small></p>
+      </div>
+      <div>
+        <h5>contact info</h5>
+        <p>Ukraine. Kramatorsk solid foundry “ETM”</p>
+        <p>+380 50 50 888 50</p>
+        <div id="social">
+          <a id="viber" href="https://www.viber.com"></a>
+          <a id="teleg" href="https://web.telegram.org"></a>
+          <a id="whats" href="https://www.whatsapp.com/"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {edge: "right"});
+    });
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, {hover: true});
+  });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {responsiveThreshold: 991});
+    });
+  </script>
+
+  <script>
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+    accordion: true
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {direction: 'right', hoverEnabled: false});
+   });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems);
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+</body>
+</html>
