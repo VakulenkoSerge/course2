@@ -23,10 +23,9 @@ body {
   font-family: 'Electrolize';
 }
 nav {
-  background: #171719;
+  background: #49494a;
   border: none;
   box-shadow: none;
-  border-bottom: 1px solid #929292;
 }
 nav .active {
   color: #ff5000;
@@ -47,7 +46,7 @@ p {
   background: #171719;
 }
 #nav-mobile .collapsible-body {
-  background: #929292;
+  background: #49494a;
 }
 .dropdown-content,
 .dropdown-content li.active {
@@ -60,7 +59,7 @@ p {
 }
 .dropdown-content li:hover,
 .dropdown-content li.active li:hover {
-  background: #929292;
+  background: #49494a;
 }
 #nav a {
   color: #ffffff;
@@ -129,14 +128,14 @@ p {
   border: 1px solid #ffffff;
 }
 .btn-main:hover {
-  background: #929292;
+  background: #49494a;
   color: #ff5000;
   border: 1px solid #ff5000;
   font-weight: 600;
 }
 .btn-sec {
   margin-top: 5px;
-  background: #929292;
+  background: #49494a;
   border: 1px solid #ff5000;
   color: #ff5000;
 }
@@ -153,7 +152,7 @@ section .container {
 section .card {
   box-shadow: none;
   border: none;
-  border-bottom: 1px solid #929292;
+  border-bottom: 1px solid #49494a;
 }
 section .card .card-content {
   padding: 0;
@@ -333,4 +332,47 @@ section .card .card-content {
   to {
     color: #ff5000;
   }
+}
+footer {
+  background: #49494a;
+  border-top: 1px solid #ff5000;
+}
+footer h2 {
+  font-family: 'Cindie 2';
+  margin-top: 0;
+}
+footer h5 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#social {
+  display: flex;
+}
+#social a {
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 20px;
+  filter: brightness(1.1);
+}
+#social a:not(:hover) {
+  filter: grayscale(1) brightness(3);
+}
+#viber {
+  background-image: url('../img/viber.png');
+}
+#teleg {
+  background-image: url('../img/telegram.png');
+}
+#whats {
+  background-image: url('../img/whatsapp.png');
 }

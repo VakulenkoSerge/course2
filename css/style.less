@@ -24,9 +24,9 @@
         background-color: #ff5000;
         border-radius: 9em;
     }
-// #c51212; первоначальный
+// #c51212; первоначальный  #929292;
 @main-color: #ff5000;
-@sec-color: #929292;
+@sec-color: #49494a;
 @bg-color: #171719;
 @text-color: #fff;
 @main-pad: 20px;
@@ -44,10 +44,10 @@ body {
 }
 
 nav {
-  background: @bg-color;
+  background: @sec-color;
   border: none;
   box-shadow: none;
-  border-bottom: 1px solid @sec-color;
+  // border-bottom: 1px solid @sec-color;
   // margin-top: 5px;
   & .active {
     color: @main-color;
@@ -351,7 +351,6 @@ section {
   }
 }
 
-
 @keyframes conn {
   from {
     color: @text-color;
@@ -359,4 +358,53 @@ section {
   to {
     color: @main-color;
   }
+}
+
+footer {
+  background: @sec-color;
+  border-top: 1px solid @main-color;
+  & h2 {
+    font-family: @font-primary;
+    margin-top: 0;
+  }
+  & h5 {
+    margin-top: 0;
+    text-decoration: underline;
+  }
+  & .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+//social links
+#social {
+  display: flex;
+  & a {
+    display: block;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 20px;
+    filter: brightness(1.1);
+    &:not(:hover) {
+      filter: grayscale(1) brightness(3);
+    }
+  }
+}
+
+#viber {
+  background-image: url('../img/viber.png');
+}
+
+#teleg {
+  background-image: url('../img/telegram.png');
+}
+
+#whats {
+  background-image: url('../img/whatsapp.png');
 }
