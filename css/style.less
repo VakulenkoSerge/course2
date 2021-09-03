@@ -203,7 +203,7 @@ section {
   }
 }
 
-#resourse, #strategy, #connect, #about, #gallery, #contact, #work {
+#resourse, #strategy, #connect, #about, #gallery, #contact, #work, #serv {
   background: @bg-image;
   background-size: cover;
   & div:last-child {
@@ -211,7 +211,7 @@ section {
   }
 }
 
-#services, #strategy, #gall, #connect, #about, #reasons, #gallery, #contact, #where, #work {
+#services, #strategy, #gall, #connect, #about, #reasons, #gallery, #contact, #where, #work, #serv {
   & h4 {
     font-family: @font-primary;
     text-transform: uppercase;
@@ -491,6 +491,58 @@ section {
   }
   &:visited {
     background: none;
+  }
+}
+
+//services page
+#serv {
+  .card-image {
+    border: 2px solid @main-color;
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    & a{
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      font-weight: 600;
+      transition: 0.5s;
+      color: transparent;
+      height: 30%;
+      text-align: right;
+      bottom: 0;
+      padding-top: 10%;
+    }
+    &:hover {
+      filter: drop-shadow(0 0 0.5rem #ff5000);
+      & a {
+        color: @main-color;
+      }
+    }
+    &::after {
+     content: '';
+     background-color: @bg-color-1;
+     position: absolute;
+     z-index: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 0%;
+     transition: 0.5s;
+    }
+    &:hover::after{
+     height: 30%;
+    }
+  }
+  .card {
+    border-bottom: none;
+    padding-top: 50px;
+  }
+  .card-content a{
+    display: block;
+    color: @text-color;
+    width: 90%;
   }
 }
 

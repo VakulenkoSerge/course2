@@ -175,7 +175,8 @@ section .card .card-content {
 #about,
 #gallery,
 #contact,
-#work {
+#work,
+#serv {
   background: url('../img/cividale-background-left.png');
   background-size: cover;
 }
@@ -185,7 +186,8 @@ section .card .card-content {
 #about div:last-child,
 #gallery div:last-child,
 #contact div:last-child,
-#work div:last-child {
+#work div:last-child,
+#serv div:last-child {
   margin-bottom: 0px;
 }
 #services,
@@ -197,7 +199,8 @@ section .card .card-content {
 #gallery,
 #contact,
 #where,
-#work {
+#work,
+#serv {
   height: auto;
 }
 #services h4,
@@ -209,7 +212,8 @@ section .card .card-content {
 #gallery h4,
 #contact h4,
 #where h4,
-#work h4 {
+#work h4,
+#serv h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
@@ -225,7 +229,8 @@ section .card .card-content {
 #gallery .parallax,
 #contact .parallax,
 #where .parallax,
-#work .parallax {
+#work .parallax,
+#serv .parallax {
   filter: brightness(0.5);
 }
 #services .valign-wrapper,
@@ -237,7 +242,8 @@ section .card .card-content {
 #gallery .valign-wrapper,
 #contact .valign-wrapper,
 #where .valign-wrapper,
-#work .valign-wrapper {
+#work .valign-wrapper,
+#serv .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
@@ -249,7 +255,8 @@ section .card .card-content {
 #gallery ul,
 #contact ul,
 #where ul,
-#work ul {
+#work ul,
+#serv ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
@@ -261,7 +268,8 @@ section .card .card-content {
 #gallery ul .active .collapsible-header,
 #contact ul .active .collapsible-header,
 #where ul .active .collapsible-header,
-#work ul .active .collapsible-header {
+#work ul .active .collapsible-header,
+#serv ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
@@ -274,7 +282,8 @@ section .card .card-content {
 #gallery ul .collapsible-header,
 #contact ul .collapsible-header,
 #where ul .collapsible-header,
-#work ul .collapsible-header {
+#work ul .collapsible-header,
+#serv ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
@@ -288,7 +297,8 @@ section .card .card-content {
 #gallery ul .collapsible-header:hover,
 #contact ul .collapsible-header:hover,
 #where ul .collapsible-header:hover,
-#work ul .collapsible-header:hover {
+#work ul .collapsible-header:hover,
+#serv ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
@@ -301,7 +311,8 @@ section .card .card-content {
 #gallery ul .collapsible-body,
 #contact ul .collapsible-body,
 #where ul .collapsible-body,
-#work ul .collapsible-body {
+#work ul .collapsible-body,
+#serv ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
 }
 #resourse img {
@@ -511,6 +522,54 @@ section .card .card-content {
 }
 #work:visited {
   background: none;
+}
+#serv .card-image {
+  border: 2px solid #ff5000;
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+#serv .card-image a {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.5s;
+  color: transparent;
+  height: 30%;
+  text-align: right;
+  bottom: 0;
+  padding-top: 10%;
+}
+#serv .card-image:hover {
+  filter: drop-shadow(0 0 0.5rem #ff5000);
+}
+#serv .card-image:hover a {
+  color: #ff5000;
+}
+#serv .card-image::after {
+  content: '';
+  background-color: rgba(23, 23, 26, 0.8);
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  transition: 0.5s;
+}
+#serv .card-image:hover::after {
+  height: 30%;
+}
+#serv .card {
+  border-bottom: none;
+  padding-top: 50px;
+}
+#serv .card-content a {
+  display: block;
+  color: #ffffff;
+  width: 90%;
 }
 footer {
   background: #49494a;
