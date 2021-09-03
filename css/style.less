@@ -203,7 +203,7 @@ section {
   }
 }
 
-#resourse, #strategy, #connect, #about {
+#resourse, #strategy, #connect, #about, #gallery {
   background: @bg-image;
   background-size: cover;
   & div:last-child {
@@ -403,7 +403,7 @@ section {
 //gallery page
 
 #gallery {
-  & h4 {
+  & h5 {
     margin-bottom: 50px;
   }
   & .materialboxed:hover:not(.active) {
@@ -426,7 +426,7 @@ section {
         grid-column-start: span 2;
         grid-row-start: span 2;
       }
-      &:nth-child(4n+6) {
+      &:nth-child(2n+4) {
         grid-row-start: span 2;
         grid-column-start: span 2;
       }
@@ -499,13 +499,46 @@ footer {
 
 
 @media only screen and (max-width:992px) {
-  #strategy, #connect, #reasons, #gallery {
+  #strategy, #connect, #reasons {
     & .container {
       &>div {
         display: block;
         & h6 {
           max-width: 100%;
         }
+      }
+    }
+  }
+  #gallery {
+    & .container {
+      &>div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        & .image {
+          &:nth-child(3n+2) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+          }
+          &:nth-child(2n+4) {
+            grid-row-start: span 1;
+            grid-column-start: span 1;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    & .container {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #gallery {
+    & .container {
+      &>div {
+        display: block;
         & .image {
           margin-bottom: 10px;
           & .materialboxed:hover:not(.active) {
@@ -516,11 +549,6 @@ footer {
           }
         }
       }
-    }
-  }
-  footer {
-    & .container {
-      display: block;
     }
   }
 }

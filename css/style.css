@@ -172,14 +172,16 @@ section .card .card-content {
 #resourse,
 #strategy,
 #connect,
-#about {
+#about,
+#gallery {
   background: url('../img/cividale-background-left.png');
   background-size: cover;
 }
 #resourse div:last-child,
 #strategy div:last-child,
 #connect div:last-child,
-#about div:last-child {
+#about div:last-child,
+#gallery div:last-child {
   margin-bottom: 0px;
 }
 #services,
@@ -400,7 +402,7 @@ section .card .card-content {
   background: rgba(23, 23, 26, 0.8);
   filter: drop-shadow(0 0 0.5rem #ff5000);
 }
-#gallery h4 {
+#gallery h5 {
   margin-bottom: 50px;
 }
 #gallery .materialboxed:hover:not(.active):hover {
@@ -423,7 +425,7 @@ section .card .card-content {
   grid-column-start: span 2;
   grid-row-start: span 2;
 }
-#gallery .container > div .image:nth-child(4n+6) {
+#gallery .container > div .image:nth-child(2n+4) {
   grid-row-start: span 2;
   grid-column-start: span 2;
 }
@@ -486,30 +488,39 @@ footer .container {
 @media only screen and (max-width: 992px) {
   #strategy .container > div,
   #connect .container > div,
-  #reasons .container > div,
-  #gallery .container > div {
+  #reasons .container > div {
     display: block;
   }
   #strategy .container > div h6,
   #connect .container > div h6,
-  #reasons .container > div h6,
-  #gallery .container > div h6 {
+  #reasons .container > div h6 {
     max-width: 100%;
   }
-  #strategy .container > div .image,
-  #connect .container > div .image,
-  #reasons .container > div .image,
-  #gallery .container > div .image {
-    margin-bottom: 10px;
+  #gallery .container > div {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
-  #strategy .container > div .image .materialboxed:hover:not(.active):hover,
-  #connect .container > div .image .materialboxed:hover:not(.active):hover,
-  #reasons .container > div .image .materialboxed:hover:not(.active):hover,
-  #gallery .container > div .image .materialboxed:hover:not(.active):hover {
-    opacity: 1;
-    filter: contrast(1);
+  #gallery .container > div .image:nth-child(3n+2) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+  }
+  #gallery .container > div .image:nth-child(2n+4) {
+    grid-row-start: span 1;
+    grid-column-start: span 1;
   }
   footer .container {
     display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #gallery .container > div {
+    display: block;
+  }
+  #gallery .container > div .image {
+    margin-bottom: 10px;
+  }
+  #gallery .container > div .image .materialboxed:hover:not(.active):hover {
+    opacity: 1;
+    filter: contrast(1);
   }
 }
