@@ -97,6 +97,7 @@ p {
     &:hover {
       background-color: @sec-color;
       color: @main-color;
+      text-shadow: 2px 0px 12px @main-color;
     }
   }
   & .active {
@@ -211,7 +212,7 @@ section {
   }
 }
 
-#services, #strategy, #gall, #connect, #about, #reasons, #gallery, #contact, #where, #work, #serv {
+#services, #strategy, #gall, #connect, #about, #reasons, #gallery, #contact, #where, #work, #serv, #drawin {
   & h4 {
     font-family: @font-primary;
     text-transform: uppercase;
@@ -220,8 +221,8 @@ section {
     filter: drop-shadow(0 0 0.1rem #000);
   }
   height: auto;
-  & .parallax {
-    filter: brightness(0.5);
+  & .parallax img {
+    filter: brightness(0.6);
   }
   & .valign-wrapper {
     justify-content: flex-end;
@@ -494,6 +495,11 @@ section {
   }
 }
 
+#phone, #email {
+  animation: conn 0.8s linear infinite alternate;
+}
+
+
 //services page
 #serv {
   .card-image {
@@ -546,10 +552,15 @@ section {
   }
 }
 
+#drawin {
+  h5 {
+    margin-bottom: 50px;
+  }
+}
+
 //footer
 footer {
   background: @sec-color;
-  border-top: 1px solid @main-color;
   & h2 {
     font-family: @font-primary;
     margin-top: 0;

@@ -73,6 +73,7 @@ p {
 #nav a:hover {
   background-color: #49494a;
   color: #ff5000;
+  text-shadow: 2px 0px 12px #ff5000;
 }
 #nav .active {
   background-color: #49494a;
@@ -200,7 +201,8 @@ section .card .card-content {
 #contact,
 #where,
 #work,
-#serv {
+#serv,
+#drawin {
   height: auto;
 }
 #services h4,
@@ -213,25 +215,27 @@ section .card .card-content {
 #contact h4,
 #where h4,
 #work h4,
-#serv h4 {
+#serv h4,
+#drawin h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
   color: #ff5000;
   filter: drop-shadow(0 0 0.1rem #000000);
 }
-#services .parallax,
-#strategy .parallax,
-#gall .parallax,
-#connect .parallax,
-#about .parallax,
-#reasons .parallax,
-#gallery .parallax,
-#contact .parallax,
-#where .parallax,
-#work .parallax,
-#serv .parallax {
-  filter: brightness(0.5);
+#services .parallax img,
+#strategy .parallax img,
+#gall .parallax img,
+#connect .parallax img,
+#about .parallax img,
+#reasons .parallax img,
+#gallery .parallax img,
+#contact .parallax img,
+#where .parallax img,
+#work .parallax img,
+#serv .parallax img,
+#drawin .parallax img {
+  filter: brightness(0.6);
 }
 #services .valign-wrapper,
 #strategy .valign-wrapper,
@@ -243,7 +247,8 @@ section .card .card-content {
 #contact .valign-wrapper,
 #where .valign-wrapper,
 #work .valign-wrapper,
-#serv .valign-wrapper {
+#serv .valign-wrapper,
+#drawin .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
@@ -256,7 +261,8 @@ section .card .card-content {
 #contact ul,
 #where ul,
 #work ul,
-#serv ul {
+#serv ul,
+#drawin ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
@@ -269,7 +275,8 @@ section .card .card-content {
 #contact ul .active .collapsible-header,
 #where ul .active .collapsible-header,
 #work ul .active .collapsible-header,
-#serv ul .active .collapsible-header {
+#serv ul .active .collapsible-header,
+#drawin ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
@@ -283,7 +290,8 @@ section .card .card-content {
 #contact ul .collapsible-header,
 #where ul .collapsible-header,
 #work ul .collapsible-header,
-#serv ul .collapsible-header {
+#serv ul .collapsible-header,
+#drawin ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
@@ -298,7 +306,8 @@ section .card .card-content {
 #contact ul .collapsible-header:hover,
 #where ul .collapsible-header:hover,
 #work ul .collapsible-header:hover,
-#serv ul .collapsible-header:hover {
+#serv ul .collapsible-header:hover,
+#drawin ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
@@ -312,7 +321,8 @@ section .card .card-content {
 #contact ul .collapsible-body,
 #where ul .collapsible-body,
 #work ul .collapsible-body,
-#serv ul .collapsible-body {
+#serv ul .collapsible-body,
+#drawin ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
 }
 #resourse img {
@@ -523,6 +533,10 @@ section .card .card-content {
 #work:visited {
   background: none;
 }
+#phone,
+#email {
+  animation: conn 0.8s linear infinite alternate;
+}
 #serv .card-image {
   border: 2px solid #ff5000;
   position: relative;
@@ -571,9 +585,11 @@ section .card .card-content {
   color: #ffffff;
   width: 90%;
 }
+#drawin h5 {
+  margin-bottom: 50px;
+}
 footer {
   background: #49494a;
-  border-top: 1px solid #ff5000;
 }
 footer h2 {
   font-family: 'Cindie 2';
