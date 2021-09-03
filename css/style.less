@@ -203,7 +203,7 @@ section {
   }
 }
 
-#resourse, #strategy, #connect, #about, #gallery {
+#resourse, #strategy, #connect, #about, #gallery, #contact, #work {
   background: @bg-image;
   background-size: cover;
   & div:last-child {
@@ -211,7 +211,7 @@ section {
   }
 }
 
-#services, #strategy, #gall, #connect, #about, #reasons, #gallery {
+#services, #strategy, #gall, #connect, #about, #reasons, #gallery, #contact, #where, #work {
   & h4 {
     font-family: @font-primary;
     text-transform: uppercase;
@@ -441,6 +441,56 @@ section {
         transition: 0.3s ease-in-out;
       }
     }
+  }
+}
+
+//contact page
+#contact {
+  h4 {
+    margin-bottom: 50px;
+  }
+  & i {
+    color: @main-color;
+    margin-right: 0;
+  }
+  .row{
+    border: 2px solid @main-color;
+    filter: drop-shadow(0 0 0.5rem #ff5000);
+    background: @bg-color-1;
+  }
+  & .col {
+    padding: 20px;
+  }
+  & a {
+    color: @text-color;
+    &:hover {
+      color: bg-color;
+    }
+  }
+}
+
+#where {
+  h4 {
+    margin-bottom: 50px;
+  }
+  & .addressMain {
+    margin-bottom: 50px;
+  }
+}
+
+#work {
+  h4 {
+    margin-bottom: 50px;
+  }
+  input, button, textarea {
+    color: @text-color;
+    font-family: @font-secondary;
+  }
+  &:focus {
+    color: @text-color;
+  }
+  &:visited {
+    background: none;
   }
 }
 

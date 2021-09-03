@@ -173,7 +173,9 @@ section .card .card-content {
 #strategy,
 #connect,
 #about,
-#gallery {
+#gallery,
+#contact,
+#work {
   background: url('../img/cividale-background-left.png');
   background-size: cover;
 }
@@ -181,7 +183,9 @@ section .card .card-content {
 #strategy div:last-child,
 #connect div:last-child,
 #about div:last-child,
-#gallery div:last-child {
+#gallery div:last-child,
+#contact div:last-child,
+#work div:last-child {
   margin-bottom: 0px;
 }
 #services,
@@ -190,7 +194,10 @@ section .card .card-content {
 #connect,
 #about,
 #reasons,
-#gallery {
+#gallery,
+#contact,
+#where,
+#work {
   height: auto;
 }
 #services h4,
@@ -199,7 +206,10 @@ section .card .card-content {
 #connect h4,
 #about h4,
 #reasons h4,
-#gallery h4 {
+#gallery h4,
+#contact h4,
+#where h4,
+#work h4 {
   font-family: 'Cindie 2';
   text-transform: uppercase;
   margin: 0;
@@ -212,7 +222,10 @@ section .card .card-content {
 #connect .parallax,
 #about .parallax,
 #reasons .parallax,
-#gallery .parallax {
+#gallery .parallax,
+#contact .parallax,
+#where .parallax,
+#work .parallax {
   filter: brightness(0.5);
 }
 #services .valign-wrapper,
@@ -221,7 +234,10 @@ section .card .card-content {
 #connect .valign-wrapper,
 #about .valign-wrapper,
 #reasons .valign-wrapper,
-#gallery .valign-wrapper {
+#gallery .valign-wrapper,
+#contact .valign-wrapper,
+#where .valign-wrapper,
+#work .valign-wrapper {
   justify-content: flex-end;
 }
 #services ul,
@@ -230,7 +246,10 @@ section .card .card-content {
 #connect ul,
 #about ul,
 #reasons ul,
-#gallery ul {
+#gallery ul,
+#contact ul,
+#where ul,
+#work ul {
   margin: 50px auto;
 }
 #services ul .active .collapsible-header,
@@ -239,7 +258,10 @@ section .card .card-content {
 #connect ul .active .collapsible-header,
 #about ul .active .collapsible-header,
 #reasons ul .active .collapsible-header,
-#gallery ul .active .collapsible-header {
+#gallery ul .active .collapsible-header,
+#contact ul .active .collapsible-header,
+#where ul .active .collapsible-header,
+#work ul .active .collapsible-header {
   color: #ffffff;
   background: #ff5000;
 }
@@ -249,7 +271,10 @@ section .card .card-content {
 #connect ul .collapsible-header,
 #about ul .collapsible-header,
 #reasons ul .collapsible-header,
-#gallery ul .collapsible-header {
+#gallery ul .collapsible-header,
+#contact ul .collapsible-header,
+#where ul .collapsible-header,
+#work ul .collapsible-header {
   justify-content: space-between;
   transition: 0.2s;
   background: rgba(23, 23, 26, 0.8);
@@ -260,7 +285,10 @@ section .card .card-content {
 #connect ul .collapsible-header:hover,
 #about ul .collapsible-header:hover,
 #reasons ul .collapsible-header:hover,
-#gallery ul .collapsible-header:hover {
+#gallery ul .collapsible-header:hover,
+#contact ul .collapsible-header:hover,
+#where ul .collapsible-header:hover,
+#work ul .collapsible-header:hover {
   color: #ffffff;
   background: #ff5000;
 }
@@ -270,7 +298,10 @@ section .card .card-content {
 #connect ul .collapsible-body,
 #about ul .collapsible-body,
 #reasons ul .collapsible-body,
-#gallery ul .collapsible-body {
+#gallery ul .collapsible-body,
+#contact ul .collapsible-body,
+#where ul .collapsible-body,
+#work ul .collapsible-body {
   background: rgba(23, 23, 26, 0.8);
 }
 #resourse img {
@@ -438,6 +469,48 @@ section .card .card-content {
   height: 100%;
   object-fit: cover;
   transition: 0.3s ease-in-out;
+}
+#contact h4 {
+  margin-bottom: 50px;
+}
+#contact i {
+  color: #ff5000;
+  margin-right: 0;
+}
+#contact .row {
+  border: 2px solid #ff5000;
+  filter: drop-shadow(0 0 0.5rem #ff5000);
+  background: rgba(23, 23, 26, 0.8);
+}
+#contact .col {
+  padding: 20px;
+}
+#contact a {
+  color: #ffffff;
+}
+#contact a:hover {
+  color: bg-color;
+}
+#where h4 {
+  margin-bottom: 50px;
+}
+#where .addressMain {
+  margin-bottom: 50px;
+}
+#work h4 {
+  margin-bottom: 50px;
+}
+#work input,
+#work button,
+#work textarea {
+  color: #ffffff;
+  font-family: 'Electrolize';
+}
+#work:focus {
+  color: #ffffff;
+}
+#work:visited {
+  background: none;
 }
 footer {
   background: #49494a;
