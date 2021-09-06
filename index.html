@@ -399,19 +399,19 @@
     var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems, {hover: true});
   });
+  </script><script>
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+    accordion: true
+    });
   </script>
+
+
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems, {responsiveThreshold: 991});
-    });
-  </script>
-
-  <script>
-    var elem = document.querySelector('.collapsible.expandable');
-    var instance = M.Collapsible.init(elem, {
-    accordion: true
     });
   </script>
 
@@ -422,12 +422,12 @@
    });
   </script>
 
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems);
   });
-  </script>
+  </script> -->
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
